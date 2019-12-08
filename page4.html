@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Page</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<!--end topBar-->
+	<div id="siteContainer">
+       
+       <section id="topBar"><h2 class="hidden">Top Bar</h2></section>
+    	 <header class="mainHeader">
+      <div class="logoHeader">
+        <img src="assets/Nameless.svg" alt="Akumal Snorkel Logo"  id="logo">
+      </div>
+      <nav class="mainNav">
+        <h2 class="hidden">Main Navigation</h2>
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li ><a href="page2.html">GALLERY</a></li>
+               <li><a href="page3.html">ABOUT</a></li>
+               <li class="selected"><a href="page4.html">CONTACT</a></li>
+            </ul>
+      </nav>
+    </header><!--end mainHeader-->
+        <h2 id="indexHeader">CONTACT US</h2>
+
+        
+        <main>
+        <section id="mainContact"> <h2 class="hidden">Main Contact</h2><!--start mainGallery-->
+                    
+            <section id="contactArea"><h2 class="hidden">Contact Area</h2><!--start contactArea-->
+                
+                 
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">Name: (required)</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    
+                    <label for="email">Email: (will not be published)</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                    
+                    
+                    <label for="phone">Phone: (required)</label>
+                    <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+                    
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+                    
+                    
+                   
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+           
+            
+            <!--end mapArea--> 
+            
+            </section><!--end contactArea-->  
+            <section id="mapArea"><!--start mapArea-->
+                <h3>Visit Us</h3>
+                <ul>
+                    <li>Akumal Riviera Maya, </li>
+                    <li>Quintana Roo; México </li>
+                    <li>Phone: 1-800-GO-SNORKEL</li>
+                    <li>Fax: 1-800-MO-SNORKEL</li>
+                </ul>    
+                
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.319949442948!2d-79.41643998449857!3d43.766216879117664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2d6fe3fdd4e7%3A0x7a27d8f47532c7ad!2z0J3QvtGA0YIt0JnQvtGA0LosINCe0L3RgtCw0YDQuNC-IE0yTiA2Ujg!5e0!3m2!1sru!2sca!4v1575795604275!5m2!1sru!2sca" width="380" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+
+
+                <div id="socialmed">
+                <h3>Subscribe on our Instagram</h3>
+                <h3>@ModernArtIsCool</h3>
+                </div>
+            </section>
+                 
+        </section>
+        
+        
+        <!--end productInfo-->
+        </main>
+              <footer class="mainFooter">
+      <div class="LogoNav">
+        
+        <nav class="footerNav">
+          <h2 class="hidden">Footer navigation</h2>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                  <li><a href="page2.html">GALLERY</a></li>
+                  <li><a href="page3.html">ABOUT</a></li>
+                  <li class="selected"><a href="page4.html">CONTACT</a></li>
+              </ul>
+        </nav>
+      </div>  
+
+      <div class="socialMedia">
+         
+        <h2 class="hidden">Social Media</h2>
+        <ul id="iconNav">
+            <li id="facebook">
+              <a href="http://www.facebook.com">
+                <img src="images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li id="twitter">
+              <a href="http://www.twitter.com">
+                <img src="images/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li id="youtube">
+              <a href="http://www.youtube.com">
+                <img src="images/youtube.svg" alt="youtube">
+              </a>
+           </li>
+        </ul>
+      </div>
+      <div class="logoFooter">
+          <p id="copyright">All rights are reserved  .</p>
+        </div>     
+    </footer><!--end mainFooter-->
+        <section id="bottomBar"><h2 class="hidden">Bottom Bar</h2></section>
+    </div><!--end siteContainer-->
+<script src="js/main.js"></script>    
+</body>
+</html>

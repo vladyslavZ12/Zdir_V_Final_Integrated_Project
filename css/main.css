@@ -1,0 +1,716 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+p
+{
+	color: #333 ;
+	line-height: 100px;
+
+	text-align: center;
+	margin: 0;
+}
+
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+p {
+	font-family: 'Alatsi', sans-serif;
+	color:white;
+	font-size:15px;
+}
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-size: 12px;
+	background-image: url("../images/pattern.svg");
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+
+#topBar
+{
+	background-color: #790000;
+	height: 20px;
+}
+
+#bottomBar
+{
+	background-color: #790000;
+	height: 20px;
+}
+
+.hidden
+{
+  display: none;
+}
+
+/*-- End hidden --*/
+
+/*-- Start Container --*/
+
+.container
+{
+  width: 980px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/*-- End Container --*/
+
+/*-- Start Header --*/
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #7a002680;
+  height: 130px;
+}
+
+.logoHeader
+{
+  width: 220px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.mainNav
+{
+  width: 500px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left: auto;
+
+}
+
+.mainNav ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainNav ul li {  
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 25px;
+ 
+}
+
+.mainNav ul li a
+{
+  color: white;
+  padding: 5px;
+}
+
+.mainNav ul li a:hover {
+  padding: 5px;
+  background-color:#a43d5d ;
+}
+
+.selected
+{
+  padding: 5px 0px 5px 0px;
+  background-color:#a43d5d;
+}
+
+#siteContainer 
+{
+
+	margin: 0 auto;
+
+	max-width: 1099px;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-width: 920px;
+	
+}
+
+#mainHeader
+{
+	background-color: #7a002680;
+	
+	
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+}
+
+#logo
+{
+	width: 370px;
+	
+
+}
+
+
+/*end of header*/
+
+
+/*beguinig of footer*/
+
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: #7a002680;
+  justify-content: flex-start;
+  height: 125px;
+
+}
+
+.logoNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoFooter {
+  margin-top: 25px;
+  margin-bottom: 20px; /*for nav underneath, nav can't use margin on floated element above*/
+  margin-left: 20px;
+}
+
+.footerNav {
+  width: 380px;
+  height: 25px;
+  margin-left: 65px;
+}
+
+.footerNav ul {
+  padding: 5px 0px 5px 0px;
+  list-style-type: none;
+  width: 500px;
+
+  margin-top: 60px;
+}
+
+.footerNav ul li { 
+  cursor: pointer;
+  display: inline;
+  margin-right: 25px;
+  font-size: 15px; 
+
+}
+
+.footerNav ul li a {
+  color: white;
+  padding: 5px;
+ 
+
+}
+
+.footerNav ul li a:hover {
+  padding: 5px;
+  background-color:#a43d5d;
+}
+
+.socialMedia {
+  height: 45px;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+
+#iconNav img {
+  width: 45px;
+  height: 45px;
+}
+
+#iconNav {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+#iconNav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#iconNav li a {
+  filter: grayscale(100%);
+}
+
+#iconNav li a:hover {
+  filter: grayscale(0%);
+}
+
+
+/*body*/
+#promo 
+{
+	margin-top: 80px;
+	
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+#promo p 
+{
+	line-height: 85px;
+}
+
+#promoText 
+{
+	width: 570px ;
+	height: 238px;
+	background: url(../images/home1.jpg) no-repeat bottom;
+	position:relative;
+	border: solid 15px #ab5e76;
+	line-height: 200px;
+
+}
+
+#heroText1{
+	font-size: 80px;
+	line-height: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#heroText2{
+	font-size: 50px;
+	line-height: 20px;
+	margin-top: 0px;
+}
+
+#promoImage 
+{
+	background: url(../images/home2.jpg) no-repeat bottom;
+
+	position:relative;
+	border: solid 15px #ab5e76;
+	line-height: 200px;
+	margin-left: auto;
+	width: 250px;
+	height:239px;
+	background-color:#ab5e76;
+
+}
+
+#indexHeader{
+	text-align:center;
+	color:#ab5e76;
+	font-family: 'Alatsi', sans-serif;
+	font-size:50px;
+	line-height: 0px;
+	margin-top: 80px;
+	
+}
+
+#new{
+	text-align:center;
+	color:#ab5e76;
+	font-family: 'Alatsi', sans-serif;
+	font-size:50px;
+	line-height: 0px;
+	border-bottom: solid 1px #DDD;
+	margin-top: 0px;
+	
+}
+
+#productInfo 
+{
+	margin-top: 80px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	
+	
+}
+
+#productInfo p 
+{
+	line-height: 300px;
+}
+
+.productDesc 
+{
+	width: 200px;
+	background-color: #ab5e76;
+}
+
+
+
+#productTextInfo 
+{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+  	border-bottom: solid 1px #DDD;
+	
+	
+}
+
+#productTextInfo p 
+{
+	line-height: 30px;
+	color: #ab5e76;
+}
+
+
+.productText 
+{
+	width: 200px;
+	height: 100px;
+	background-color:transparent;
+
+}
+
+#mainFooter 
+{
+	margin-top: 80px;
+	margin-bottom: 0px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+/*page2*/
+
+#middleBar1{
+	height:50px;
+	background-color:#ab5e76; 
+	margin-top: 100px;
+}
+
+
+
+
+
+.mainGallery {
+
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.galleryImageCon {
+	width: 220px;
+	height: 212px;
+	background-color: #ab5e76;
+	margin-bottom: 40px;
+
+}
+
+.underimg {	
+	color: #ab5e76;
+	line-height: 20px;
+		
+}
+
+.button{
+	background-color:#ab5e76 ;
+	justify-content:center;
+	margin-left: 90px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+    border-color: #ab5e76;
+    border-radius: 20px;
+    color:white;
+    font-family: 'Alatsi', sans-serif;
+
+}
+
+.buttonindex{
+	background-color:#ab5e76 ;
+	justify-content:center;
+	margin-left: 80px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+    border-color: #ab5e76;
+    border-radius: 20px;
+    color:white;
+    font-family: 'Alatsi', sans-serif;
+
+}
+
+
+#middleBar2{
+	height:50px;
+	background-color:#ab5e76; 
+	margin-top: 0px;
+}
+
+
+
+#textxext{
+	color:white;
+	line-height: 50px;
+	padding: 0 auto;
+	font-size:20px;	
+}
+
+#textxext2{
+	color:white;
+	line-height: 50px;
+	font-size:20px;	
+}
+
+#Firstheader{
+	color:#ab5e76;
+	text-align: center;
+	font-family: 'Alatsi', sans-serif;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#Secondheader{
+	color:#ab5e76;
+	text-align: center;
+	font-family: 'Alatsi', sans-serif;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.mainArtGallery {
+
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: solid 2px #DDD;margin-top:  
+}
+
+.galleryArtCon {
+	width: 220px;
+	height: 212px;
+	background-color: #ab5e76;
+	margin-bottom: 40px;
+}
+
+/*page3*/
+
+
+#aboutbox{
+	display: flex;
+	justify-content: space-between;
+	margin-right: : auto;
+	background-color:#ab5e76;
+	 
+
+}
+
+#aboutText{
+	margin-top: 5px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom: 40px;
+	text-align: center;
+	line-height: 20px;
+   
+}
+
+#imageplace{
+	margin-top: 80px;
+
+	height: 180px;
+	background-color: pink;
+	
+}
+
+#aboutBox p{
+	font-family: 'Alatsi', sans-serif;
+}
+/*page4*/
+
+
+
+#contactInfo{
+	
+}
+
+#input{
+
+}
+
+/*#contactArea{
+	
+	margin-top: 60px;
+	background-color: #ab5e76;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    color:white;
+    font-family: 'Alatsi', sans-serif;
+  	font-size:15px;
+  	padding: 20px 20px 20px 20px;
+
+  }*/
+
+/*#contactImage{
+	background-color: pink;
+	width:700px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+
+	
+	
+}*/
+
+#comments{
+	background-color:white ;
+	padding:20px 20px 20px 20px ;
+	color:white;
+	font-family: 'Alatsi', sans-serif;
+	font-size:15px;
+	margin-bottom: 100px;
+
+}
+
+.commentsText{
+	
+	
+
+}
+
+#mainContact {
+ 
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #ab5e76;
+  color:white;
+  font-family: 'Alatsi', sans-serif;
+  font-size:17px
+
+}
+
+#mainContact h2 {
+  font-size: 30px;
+  color: #2073a8;
+  background-color: #ddeff7;
+  margin-bottom: 50px;
+  padding: 8px 0px 8px 5px;
+  width: 940px;
+}
+
+#contactArea {
+  width: 510px;
+  border-right: solid 1px #CCC;
+  margin-bottom: 30px;
+}
+
+
+#contactText {
+  font-size: 21px;
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+#contactForm {
+  margin-top: 30px;
+}
+
+fieldset {
+  border: none;
+  padding: 0px;
+}
+
+
+input, textarea  {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 10px;
+  background-color: white;
+  display: block;
+  border: 1px solid #999;
+  color: #333;
+}
+
+#comments {
+  width: 360px;
+  height: 200px;
+}
+
+#submit {
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  font-size: 14px;
+  border: 1px solid #003471;
+}
+
+#mapArea {
+  width: 380px;
+  margin-left: 90px;
+}
+
+
+#mapArea h3 {
+  font-size: 21px;
+  margin-top: 0;
+  color: white;
+}
+
+#mapArea ul {
+  list-style-type: none;
+  padding: 0;
+} 
+
+#socialmed{
+	margin-top: 210px;
+}
+
+#copyright{
+	margin-right:10px;
+	margin-bottom: 30px
+	font-size: 10px;
+}

@@ -152,10 +152,10 @@ a:hover, a:active
 
 	margin: 0 auto;
 
-	max-width: 1099px;
+	width: 1099px;
 	padding-left: 20px;
 	padding-right: 20px;
-	min-width: 920px;
+	
 	
 }
 
@@ -527,6 +527,7 @@ a:hover, a:active
 	justify-content: space-between;
 	margin-right: : auto;
 	background-color:#ab5e76;
+	margin-bottom:75px;
 	 
 
 }
@@ -536,8 +537,9 @@ a:hover, a:active
 	margin-left:20px;
 	margin-right:20px;
 	margin-bottom: 40px;
-	text-align: center;
-	line-height: 20px;
+	text-align: left;
+	line-height: 25px;
+	font-size: 20px;
    
 }
 
@@ -704,6 +706,12 @@ input, textarea  {
   list-style-type: none;
   padding: 0;
 } 
+
+#map{
+	width:380px; 
+	height:300px; 
+	 
+}
 
 #socialmed{
 	margin-top: 210px;

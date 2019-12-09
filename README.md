@@ -14,7 +14,7 @@ product is named and has button "buy".
 ### Third page
 >Third page is "about" page. there is 
 written all important information about the company. The page clearly describes everything that can interest a client.
-### Forth page 
+### Fourth page 
 >The last page is a contact page. It contains 
 information about location and has a contact form that helps clients to ask anything they want to know.  
 
